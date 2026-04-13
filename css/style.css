@@ -56,6 +56,55 @@ body {
     align-items: center;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #2d1974; 
+    min-width: 200px;
+    border: 1px solid #FFFFFF; 
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 1000;
+    margin-top: 25px; 
+}
+
+.dropdown-menu a {
+    display: block; 
+    margin: 0; 
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #FFFFFF; 
+    color: #2d1974; 
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: transparent;
+}
+
 
 
 
@@ -113,6 +162,7 @@ body {
     max-width: 40%;
     padding : 1%;
     border: #FFFFFF solid 1px;
+    border-radius: 12px;
     margin-right: 5%;
 }
 
@@ -173,6 +223,7 @@ body {
     padding : 1%;
     margin-left: 3%;
     border: #FFFFFF solid 1px;
+    border-radius: 12px;
 }
 
 .select .card_img {
@@ -222,41 +273,37 @@ body {
     margin-bottom: 60px;
 }
 
-/* Grille pour afficher 2 colonnes */
 .creators {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px; /* Espace entre les cartes */
+    gap: 40px; 
     max-width: 1000px;
-    margin: 0 auto; /* Centrer la grille horizontalement */
+    margin: 0 auto; 
 }
 
-/* Style principal de la carte */
 .creator_item {
-    background-color: #12131c; /* Couleur de fond très sombre */
-    border: 1px solid #2a2b3d; /* Légère bordure bleue/grise */
+    background-color: #12131c; 
+    border: 1px solid #2a2b3d; 
     border-radius: 12px;
-    padding: 30px 30px 40px; /* Padding interne */
+    padding: 30px 30px 40px; 
     position: relative;
-    margin-top: 20px; /* Laisse de la place pour l'icône qui dépasse en haut */
+    margin-top: 20px; 
 }
 
-/* Style de l'icône encadrée qui dépasse */
 .creator_icon {
     width: 48px;
     height: 48px;
-    background-color: #161824; /* Un peu plus clair que la carte */
+    background-color: #161824; 
     border: 1px solid #2a2b3d;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     
-    /* Positionnement absolu pour faire dépasser le bloc en haut à gauche */
     position: absolute;
-    top: -24px;   /* Remonte le carré de sa moitié */
-    left: 40px;   /* Le décale de la bordure gauche */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optionnel: petite ombre pour détacher l'icône */
+    top: -24px;  
+    left: 40px;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
 }
 
 .creator_icon img {
@@ -273,7 +320,7 @@ body {
 }
 
 .creator_desc {
-    color: #a0a0b0; /* Texte gris clair */
+    color: #a0a0b0; 
     font-size: 16px;
     line-height: 1.5;
 }
@@ -301,6 +348,7 @@ body {
     flex: 1;
     padding: 20px;
     border: #FFFFFF solid 1px;
+    border-radius: 12px;
 }
 
 .news_title {
