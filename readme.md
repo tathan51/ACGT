@@ -1,12 +1,13 @@
 ## Modèle https://modrinth.com/ 
 
 # contenu :
-- Tendance
-- Nouveau
-- catégorie
+- mods ? et maps ? (systeme de filtrage ex : vehicule, animaux, grains...Etc) OU AUTRE
+- Tendance (le plus gros nombre de dowload)
+- Nouveau (case a cocher avec timer de 7j)
+- catégorie ???
 
 # Sélection du moment :
-- tendance du moment et recommander
+- Sélection par ACGT case a cocher pour mettre en avant
 
 # Actualité :
 - annonce sur le jeux le site etc
