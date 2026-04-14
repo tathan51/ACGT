@@ -1,5 +1,5 @@
 body {
-    background-color: #17171c;
+    background-color: #17171c; 
     color: #FFFFFF;
     font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     height: 100%;
@@ -18,7 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4%; 
+    margin-bottom: 2rem;
 }   
 
 .topbar a{
@@ -108,182 +108,143 @@ body {
 
 
 
-.maps-page {
+.contact-page {
     padding: 2rem;
-    max-width: 1200px;
+    max-width: 800px; 
     margin: 0 auto;
-    font-family: sans-serif;
-}
-
-.search-filter-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
-    gap: 1.5rem;
 }
 
-.search-bar-container {
-    display: flex;
+.contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
     width: 100%;
-    max-width: 600px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: white;
 }
 
-.search-input {
-    flex: 1;
-    padding: 1rem 1.5rem;
-    border: 1px solid #ddd;
-    border-right: none;
-    font-size: 1rem;
-    outline: none;
-    border-radius: 8px 0 0 8px;
-    background-color: #fafafa;
-}
-
-.search-input:focus {
-    background-color: white;
-    border-color: #0056b3;
-}
-
-.search-btn {
-    padding: 1rem 2rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
+.contact-title-creator  {
+    font-size: 2.5rem;
     font-weight: bold;
-    transition: background-color 0.2s ease-in-out;
-    border-radius: 0 8px 8px 0;
+    color: #ffffff;
+    margin-top: 14%;
 }
 
-.search-btn:hover {
-    background-color: #0056b3;
-}
-
-.filters-container {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0.5rem;
-}
-
-.filter-label {
-    font-weight: 600;
+.contact-desc-creator {
     font-size: 1.1rem;
-    color: #333;
-    color: var(--text-color, #333);
+    color: #a1a1aa;
+    margin-top: 0.5rem;
+    margin-bottom: auto;
 }
 
-.filter-select {
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    background-color: white;
-    font-size: 0.95rem;
-    outline: none;
-    cursor: pointer;
-    transition: border-color 0.2s;
+.contact-page-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    color: #ffffff;
 }
 
-.filter-select:focus, .filter-select:hover {
-    border-color: #007bff;
-}
-
-.maps-grid-section {
-    width: 100%;
-}
-
-.maps-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2.5rem;
-}
-
-.map-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    border: 1px solid #eaeaea;
-}
-
-.map-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.map-card-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    background-color: #f4f4f4;
-}
-
-.map-card-content {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.map-card-title {
-    margin: 0 0 0.8rem 0;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #222;
-}
-
-.map-card-desc {
-    color: #555;
-    font-size: 0.95rem;
-    line-height: 1.6;
+.contact-page-subtitle {
+    font-size: 1.1rem;
+    color: #a1a1aa;
+    margin: 0;
     margin-bottom: 2rem;
-    flex: 1;
 }
 
-.map-card-footer {
+.discord-button-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.discord-btn {
+    display: inline-flex;
     align-items: center;
-    margin-top: auto;
-    border-top: 1px solid #f0f0f0;
-    padding-top: 1rem;
-}
-
-.map-tag {
-    background-color: #f1f3f5;
-    color: #495057;
-    padding: 0.4rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
-}
-
-.btn-download {
-    text-decoration: none;
-    background-color: #28a745;
+    gap: 12px;
+    background-color: #5865F2; 
     color: white;
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: background-color 0.2s;
-    font-size: 0.9rem;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
 }
 
-.btn-download:hover {
-    background-color: #218838;
+.discord-btn:hover {
+    background-color: #4752C4;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.discord-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-info-section {
+    width: 100%;
+}
+
+.info-card {
+    background-color: #202028; 
+    border: 1px solid #333342;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.info-card-header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #333342;
+    padding-bottom: 1.5rem;
+}
+
+.info-card-header h2 {
+    font-size: 1.6rem;
+    margin: 0 0 0.8rem 0;
+    color: #ffffff;
+}
+
+.info-card-header p {
+    color: #a1a1aa;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.ticket-requirements {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.ticket-requirements li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.ticket-requirements .highlight {
+    color: #7289da; 
+    font-size: 1.1rem;
+}
+
+.ticket-requirements span {
+    color: #cfcfcf;
+    line-height: 1.5;
+}
+
+.warning-box {
+    background-color: rgba(255, 170, 0, 0.1);
+    border-left: 4px solid #ffaa00;
+    padding: 1rem;
+    border-radius: 4px;
+    color: #e6e6e6;
+    font-size: 0.95rem;
 }
 
 
